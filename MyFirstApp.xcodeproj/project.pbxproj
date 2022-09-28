@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B6B529E28E43F2C0057D3B8 /* Toolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6B529D28E43F2C0057D3B8 /* Toolbar.swift */; };
 		3B91AD5A28D1AF5F00863547 /* MyFirstAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B91AD5928D1AF5E00863547 /* MyFirstAppApp.swift */; };
 		3B91AD5C28D1AF5F00863547 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B91AD5B28D1AF5F00863547 /* ContentView.swift */; };
 		3B91AD5E28D1AF6800863547 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B91AD5D28D1AF6800863547 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B6B529D28E43F2C0057D3B8 /* Toolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toolbar.swift; sourceTree = "<group>"; };
 		3B91AD5628D1AF5E00863547 /* MyFirstApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFirstApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B91AD5928D1AF5E00863547 /* MyFirstAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFirstAppApp.swift; sourceTree = "<group>"; };
 		3B91AD5B28D1AF5F00863547 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,6 +35,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B6B52A028E43FEC0057D3B8 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				3B6B529D28E43F2C0057D3B8 /* Toolbar.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		3B91AD4D28D1AF5E00863547 = {
 			isa = PBXGroup;
 			children = (
@@ -52,6 +62,7 @@
 		3B91AD5828D1AF5E00863547 /* MyFirstApp */ = {
 			isa = PBXGroup;
 			children = (
+				3B6B52A028E43FEC0057D3B8 /* Components */,
 				3B91AD5928D1AF5E00863547 /* MyFirstAppApp.swift */,
 				3B91AD5B28D1AF5F00863547 /* ContentView.swift */,
 				3B91AD5D28D1AF6800863547 /* Assets.xcassets */,
@@ -138,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B6B529E28E43F2C0057D3B8 /* Toolbar.swift in Sources */,
 				3B91AD5C28D1AF5F00863547 /* ContentView.swift in Sources */,
 				3B91AD5A28D1AF5F00863547 /* MyFirstAppApp.swift in Sources */,
 			);
