@@ -15,34 +15,56 @@ struct ContentView: View {
       ScrollView {
         VStack {
           HStack { // Toolbar
-            Image("FullMenuLogo")
+            Image("FullMenuLogo") // Logo
               .resizable()
-              .frame(width: 48, height: 48)
+              .frame(width: 56, height: 56)
             
             Spacer()
             
-            Image("card-heart")
-              .renderingMode(.template)
-              .resizable()
-              .frame(width: 28, height: 28)
-              .rotationEffect(.degrees(60))
-              .foregroundColor(.red)
+            ZStack { // Card
+              RoundedRectangle(cornerRadius: 2)
+                .fill(Color.red)
+                .frame(width: 14, height: 24)
+                .rotationEffect(.degrees(60))
+              
+              Circle()
+                .fill(Color.white)
+                .frame(width: 6, height: 6)
+                .offset(x: 4, y: 1)
+              
+              Circle()
+                .fill(Color.white)
+                .frame(width: 5, height: 5)
+                .offset(x: -2, y: -2)
+              
+              Circle()
+                .fill(Color.white)
+                .frame(width: 3, height: 3)
+                .offset(x: -3, y: 4)
+              
+            }
             
-            ZStack {
-              Image("bell-outline")
-                .renderingMode(.template)
+            ZStack { // Notifiaction
+              Image(systemName: "bell")
                 .resizable()
-                .frame(width: 28, height: 28)
+                .frame(width: 24, height: 24)
                 .foregroundColor(.gray)
               
-              Text("2")
-                .font(Font.system(size: 12))
-                .foregroundColor(.white)
-                .frame(width: 14, height: 14)
-                .background(Color.yellow)
-                .clipShape(Circle())
-                .offset(x: 5, y: -5)
+              ZStack {
+                Text("2")
+                  .font(Font.system(size: 16))
+                  .foregroundColor(.white)
+                  .frame(width: 18, height: 18)
+                  .background(Color.yellow)
+                  .clipShape(Circle())
+                
+                Circle()
+                  .stroke(Color.white, lineWidth: 2)
+                  .frame(width: 18, height: 18)
+              }
+              .offset(x: 8, y: -8)
             }
+            .padding(.horizontal, 8)
           }
           .frame(
             minWidth: 0,
