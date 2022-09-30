@@ -15,8 +15,10 @@ struct ContentView: View {
       Toolbar(unreadNotificationCount: 3)
       
       ScrollView {
-        VStack {
+        VStack(alignment: .leading, spacing: 8) {
           Text("午安！").fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+          
+          Carousel()
         }
       }
       .frame(
