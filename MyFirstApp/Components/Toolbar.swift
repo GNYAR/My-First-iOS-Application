@@ -14,21 +14,17 @@ struct Toolbar: View {
     HStack {
       Image("FullMenuLogo") // Logo
         .resizable()
-        .frame(width: 56, height: 56)
+        .frame(width: 60, height: 60)
       
       Spacer()
       
-      MyCard()
-      
-      Notification(unreadCount: unreadNotificationCount)
+      HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 20) {
+        MyCard()
+        
+        Notification(unreadCount: unreadNotificationCount)
+      }
+      .padding(.trailing, 12)
     }
-    .frame(
-      minWidth: 0,
-      maxWidth: .infinity,
-      minHeight: 0,
-      maxHeight: .infinity,
-      alignment: .topLeading
-    )
   }
 }
 
@@ -85,6 +81,5 @@ struct Notification: View {
       }
       .offset(x: 8, y: -8)
     }
-    .padding(.horizontal, 8)
   }
 }
