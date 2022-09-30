@@ -5,6 +5,7 @@
 //  Created by User20 on 2022/9/14.
 //
 
+
 import SwiftUI
 
 struct ContentView: View {
@@ -15,10 +16,10 @@ struct ContentView: View {
       Toolbar(unreadNotificationCount: 3)
       
       ScrollView {
-        VStack(alignment: .leading, spacing: 8) {
+        VStack(alignment: .leading, spacing: 16) {
           Text("午安！").fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-          
           Carousel()
+          MyWallet()
         }
       }
       .frame(
