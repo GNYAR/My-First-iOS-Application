@@ -20,6 +20,7 @@ struct ContentView: View {
           Text("午安！").fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
           Carousel()
           MyWallet()
+          TaskCard()
         }
       }
       .frame(
