@@ -23,6 +23,9 @@ struct Item: Identifiable {
   }
 }
 
-func getFlexibleGridItems(_ count: Int) -> [GridItem] {
-  return Array(repeating: GridItem(.flexible()), count: count)
+func getFlexibleGridItems(_ count: Int, alignment: Alignment? = nil) -> [GridItem] {
+  return Array(
+    repeating: GridItem(.flexible(), alignment: alignment),
+    count: count
+  )
 }

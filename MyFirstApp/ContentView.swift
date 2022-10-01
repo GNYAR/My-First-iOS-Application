@@ -34,6 +34,8 @@ struct ContentView: View {
           maxHeight: .infinity,
           alignment: .topLeading
         )
+        .padding(.bottom, 60)
+        .overlay(Navigation(), alignment: .bottom)
       }
       
     }

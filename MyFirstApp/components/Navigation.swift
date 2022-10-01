@@ -8,13 +8,41 @@
 import SwiftUI
 
 struct Navigation: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+  let navigationItems: [Item] = [
+    Item(icon: "house", label: "首頁", iconColor: Color.gray),
+    Item(icon: "percent", label: "專屬任務", iconColor: Color.gray),
+    Item(icon: "dollarsign.circle.fill", label: "付款/儲值", iconColor: Color.red),
+    Item(icon: "p.circle", label: "點數商城", iconColor: Color.gray),
+    Item(icon: "person", label: "我的帳號", iconColor: Color.gray)
+  ]
+  
+  var selected: UUID { navigationItems[0].id }
+  
+  func getIconColor(_ item: Item) -> Color {
+    selected == item.id ? Color.red : item.iconColor
+  }
+  
+  func getIconSize(_ item: Item) -> CGFloat {
+    item.iconColor == Color.red ? 48 : 24
+  }
+  
+  var body: some View {
+    Divider()
+      .offset(y: 20)
+    
+    LazyVGrid(columns: getFlexibleGridItems(5, alignment: .bottom)) {
+      ForEach(navigationItems) { x in
+        VStack {
+          Image(systemName: x.icon)
+            .resizable()
+            .frame(width: getIconSize(x), height: getIconSize(x))
+            .foregroundColor(getIconColor(x))
+          
+          Text(x.label)
+            .font(.footnote)
+            .foregroundColor(selected == x.id ? Color.red : Color.gray)
+        }
+      }
     }
-}
-
-struct Navigation_Previews: PreviewProvider {
-    static var previews: some View {
-        Navigation()
-    }
+  }
 }
