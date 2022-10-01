@@ -36,6 +36,10 @@ struct ContentView: View {
         )
         .padding(.bottom, 60)
         .overlay(Navigation(), alignment: .bottom)
+        .overlay(
+          LittleHelper(),
+          alignment: .bottomTrailing
+        )
       }
       
     }
