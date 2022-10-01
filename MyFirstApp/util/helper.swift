@@ -15,7 +15,7 @@ struct Item: Identifiable {
   let label: String
   let value: Int
   
-  init(icon: String, label: String, value: Int, iconColor: Color = Color.red) {
+  init(icon: String, label: String, value: Int = 0, iconColor: Color = Color.red) {
     self.icon = icon
     self.iconColor = iconColor
     self.label = label

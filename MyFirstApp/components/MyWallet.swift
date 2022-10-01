@@ -7,28 +7,6 @@
 
 import SwiftUI
 
-struct ValueItem: View {
-  let item: Item
-  
-  var body: some View {
-    VStack(spacing: 0) {
-      Image(systemName: item.icon)
-        .resizable()
-        .scaledToFit()
-        .frame(width: 24, height: 24)
-        .foregroundColor(item.iconColor)
-      
-      Text(item.label)
-        .fontWeight(.light)
-        .padding(.vertical,8)
-      
-      Text("\(item.value)")
-        .font(.title2)
-        .fontWeight(.bold)
-    }
-  }
-}
-
 struct MyWallet: View {
   let valueItems: [Item] = [
     Item(icon: "dollarsign.circle.fill", label: "儲值金", value: 130),
@@ -44,5 +22,28 @@ struct MyWallet: View {
         ValueItem(item: x)
       }
     })
+  }
+}
+
+struct ValueItem: View {
+  let item: Item
+  
+  var body: some View {
+    VStack(spacing: 0) {
+      Image(systemName: item.icon)
+        .resizable()
+        .scaledToFit()
+        .frame(width: 20, height: 20)
+        .foregroundColor(item.iconColor)
+      
+      Text(item.label)
+        .font(.footnote)
+        .fontWeight(.light)
+        .padding(.vertical, 8)
+      
+      Text("\(item.value)")
+        .font(.title3)
+        .fontWeight(.bold)
+    }
   }
 }

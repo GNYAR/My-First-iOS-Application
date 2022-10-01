@@ -21,6 +21,7 @@ struct ContentView: View {
           Carousel()
           MyWallet()
           TaskCard()
+          Shortcuts()
         }
       }
       .frame(
