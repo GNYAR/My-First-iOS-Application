@@ -21,5 +21,6 @@ struct Carousel: View {
       }
     }
     .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
+    .padding(.horizontal, 12)
   }
 }

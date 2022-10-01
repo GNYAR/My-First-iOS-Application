@@ -22,6 +22,7 @@ struct MyWallet: View {
         ValueItem(item: x)
       }
     })
+    .padding(.horizontal, 12)
   }
 }
 

@@ -19,11 +19,12 @@ struct Shortcuts: View {
   
   var body: some View {
     ScrollView(.horizontal, showsIndicators: false) {
-      HStack(spacing: 20) {
+      HStack(spacing: 22) {
         ForEach(valueItems) { x in
           ShortcutItem(item: x)
         }
       }
+      .padding(.horizontal, 16)
     }
   }
 }

@@ -19,6 +19,7 @@ struct TaskCard: View {
       TaskCardButton()
         .offset(x: 100)
     }
+    .padding(.horizontal, 12)
   }
 }
 

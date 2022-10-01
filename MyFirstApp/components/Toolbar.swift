@@ -25,6 +25,7 @@ struct Toolbar: View {
       }
       .padding(.trailing, 12)
     }
+    .padding(.bottom, -12)
   }
 }
 

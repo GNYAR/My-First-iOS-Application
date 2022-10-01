@@ -13,25 +13,29 @@ struct ContentView: View {
     ZStack(alignment: .topLeading) {
       Color(.white).ignoresSafeArea() // Background
       
-      Toolbar(unreadNotificationCount: 3)
-      
-      ScrollView {
-        VStack(alignment: .leading, spacing: 16) {
-          Text("午安！").fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-          Carousel()
-          MyWallet()
-          TaskCard()
-          Shortcuts()
+      VStack {
+        Toolbar(unreadNotificationCount: 3)
+        
+        ScrollView {
+          VStack(alignment: .leading, spacing: 16) {
+            Text("午安！")
+              .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+              .padding(.horizontal, 12)
+            Carousel()
+            MyWallet()
+            TaskCard()
+            Shortcuts()
+          }
         }
+        .frame(
+          minWidth: 0,
+          maxWidth: .infinity,
+          minHeight: 0,
+          maxHeight: .infinity,
+          alignment: .topLeading
+        )
       }
-      .frame(
-        minWidth: 0,
-        maxWidth: .infinity,
-        minHeight: 0,
-        maxHeight: .infinity,
-        alignment: .topLeading
-      )
-      .padding(EdgeInsets(top: 60, leading: 12, bottom: 0, trailing: 12))
+      
     }
   }
 }
