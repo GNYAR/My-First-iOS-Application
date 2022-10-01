@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct Shortcuts: View {
-  let valueItems: [Item] = [
+  let shortcutItems: [Item] = [
     Item(icon: "gift", label: "最新任務"),
     Item(icon: "cart", label: "隨買店取"),
     Item(icon: "bicycle", label: "歡樂送"),
@@ -20,7 +20,7 @@ struct Shortcuts: View {
   var body: some View {
     ScrollView(.horizontal, showsIndicators: false) {
       HStack(spacing: 22) {
-        ForEach(valueItems) { x in
+        ForEach(shortcutItems) { x in
           ShortcutItem(item: x)
         }
       }
