@@ -23,6 +23,7 @@ struct Events: View {
                 .clipShape(RoundedRectangle(cornerRadius: 8))
               
               Text("2022.09.28-2022.11.01")
+                .font(.subheadline)
                 .foregroundColor(.secondary)
             }
           }

@@ -16,11 +16,11 @@ struct Carousel: View {
         Image("Carousel_\(index + 1)")
           .resizable()
           .scaledToFit()
-          .frame(height:150)
           .clipShape(RoundedRectangle(cornerRadius: 8))
       }
     }
     .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
+    .frame(height:150)
     .padding(.horizontal, 12)
   }
 }

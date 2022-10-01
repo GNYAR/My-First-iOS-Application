@@ -17,7 +17,8 @@ struct Header: View {
   var body: some View {
     HStack {
       Text(label)
-        .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+        .font(.title3)
+        .fontWeight(.semibold)
         .tracking(4)
       
       Spacer()

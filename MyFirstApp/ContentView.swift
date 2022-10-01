@@ -20,12 +20,16 @@ struct ContentView: View {
           VStack(alignment: .leading, spacing: 20) {
             Text("午安！")
               .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-              .padding(.horizontal, 12)
+              .padding(.horizontal, 16)
             Carousel()
             MyWallet()
             TaskCard()
             Shortcuts()
-            Events()
+            VStack(alignment: .leading, spacing: 36){
+              Events()
+              Tasks()
+            }
+            .padding(.bottom, 72)
           }
         }
         .frame(

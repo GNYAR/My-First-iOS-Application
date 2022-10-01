@@ -14,6 +14,7 @@
 		3B47F73F28E8185E00887351 /* LittleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B47F73E28E8185E00887351 /* LittleHelper.swift */; };
 		3B47F74228E818D800887351 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B47F74128E818D800887351 /* Header.swift */; };
 		3B47F74628E823FA00887351 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B47F74528E823FA00887351 /* Events.swift */; };
+		3B47F74928E82B7100887351 /* Tasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B47F74828E82B7100887351 /* Tasks.swift */; };
 		3B6B529E28E43F2C0057D3B8 /* Toolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6B529D28E43F2C0057D3B8 /* Toolbar.swift */; };
 		3B8081E428E7DE8600071281 /* Shortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8081E328E7DE8600071281 /* Shortcuts.swift */; };
 		3B91AD5A28D1AF5F00863547 /* MyFirstAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B91AD5928D1AF5E00863547 /* MyFirstAppApp.swift */; };
@@ -31,6 +32,7 @@
 		3B47F73E28E8185E00887351 /* LittleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LittleHelper.swift; path = MyFirstApp/Components/LittleHelper.swift; sourceTree = SOURCE_ROOT; };
 		3B47F74128E818D800887351 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Header.swift; path = MyFirstApp/Components/Header.swift; sourceTree = SOURCE_ROOT; };
 		3B47F74528E823FA00887351 /* Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Events.swift; path = MyFirstApp/Components/Events.swift; sourceTree = SOURCE_ROOT; };
+		3B47F74828E82B7100887351 /* Tasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Tasks.swift; path = MyFirstApp/Components/Tasks.swift; sourceTree = SOURCE_ROOT; };
 		3B6B529D28E43F2C0057D3B8 /* Toolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toolbar.swift; sourceTree = "<group>"; };
 		3B8081E328E7DE8600071281 /* Shortcuts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Shortcuts.swift; path = MyFirstApp/Components/Shortcuts.swift; sourceTree = SOURCE_ROOT; };
 		3B91AD5628D1AF5E00863547 /* MyFirstApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFirstApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,6 +75,7 @@
 				3B47F73E28E8185E00887351 /* LittleHelper.swift */,
 				3B47F74128E818D800887351 /* Header.swift */,
 				3B47F74528E823FA00887351 /* Events.swift */,
+				3B47F74828E82B7100887351 /* Tasks.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 				3B91AD5A28D1AF5F00863547 /* MyFirstAppApp.swift in Sources */,
 				3B4771D528E710AB005C02E6 /* helper.swift in Sources */,
 				3B47F73C28E7EFB200887351 /* Navigation.swift in Sources */,
+				3B47F74928E82B7100887351 /* Tasks.swift in Sources */,
 				3B4771DB28E7134C005C02E6 /* MyWallet.swift in Sources */,
 				3B97D69B28E6F3E100D2B3DE /* Carousel.swift in Sources */,
 			);
