@@ -17,7 +17,7 @@ struct ContentView: View {
         Toolbar(unreadNotificationCount: 3)
         
         ScrollView {
-          VStack(alignment: .leading, spacing: 16) {
+          VStack(alignment: .leading, spacing: 20) {
             Text("午安！")
               .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
               .padding(.horizontal, 12)
@@ -25,6 +25,7 @@ struct ContentView: View {
             MyWallet()
             TaskCard()
             Shortcuts()
+            Events()
           }
         }
         .frame(
