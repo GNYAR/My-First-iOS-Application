@@ -11,12 +11,14 @@ import SwiftUI
 struct ContentView: View {
   var body: some View {
     ZStack(alignment: .topLeading) {
-      Color(.white).ignoresSafeArea() // Background
+      Color(.gray)
+        .opacity(0.02)
+        .ignoresSafeArea()
       
       VStack {
         Toolbar(unreadNotificationCount: 3)
         
-        ScrollView {
+        ScrollView(showsIndicators: false) {
           VStack(alignment: .leading, spacing: 20) {
             Text("午安！")
               .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
@@ -28,6 +30,7 @@ struct ContentView: View {
             VStack(alignment: .leading, spacing: 36){
               Events()
               Tasks()
+              Exchanges()
             }
             .padding(.bottom, 72)
           }
