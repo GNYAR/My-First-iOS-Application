@@ -58,7 +58,7 @@ struct Chips: View {
   let selectedChip: Int = 0;
   
   func getChipColor(_ index: Int) -> Color {
-    index == selectedChip ? Color.yellow : Color.gray.opacity(0.1)
+    index == selectedChip ? Color("yellow") : Color.gray.opacity(0.1)
   }
   
   var body: some View {
@@ -101,7 +101,7 @@ struct ExchangeCard: View {
             Image(systemName: "p.circle.fill")
               .resizable()
               .frame(width: 20, height: 20)
-              .foregroundColor(.yellow)
+              .foregroundColor(Color("yellow"))
             
             Text("\(exchageItem.price1!)")
               .fontWeight(.bold)
@@ -113,12 +113,12 @@ struct ExchangeCard: View {
             Image(systemName: "p.circle.fill")
               .resizable()
               .frame(width: 20, height: 20)
-              .foregroundColor(.yellow)
+              .foregroundColor(Color("yellow"))
             
             Text("\(exchageItem.price2[0])")
               .fontWeight(.bold)
             Text("+")
-              .foregroundColor(.red)
+              .foregroundColor(Color("red"))
             Text("\(exchageItem.price2[1])元")
           }
         }
@@ -131,11 +131,11 @@ struct ExchangeCard: View {
         Spacer()
         
         Text("兌換")
-          .foregroundColor(.yellow)
+          .foregroundColor(Color("yellow"))
           .frame(width: 64, height: 36)
           .background(
             Capsule()
-              .stroke(Color.yellow)
+              .stroke(Color("yellow"))
           )
         
         Spacer()

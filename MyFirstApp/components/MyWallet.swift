@@ -11,9 +11,9 @@ struct MyWallet: View {
   let valueItems: [Item] = [
     Item(icon: "dollarsign.circle.fill", label: "儲值金", value: 130),
     Item(icon: "p.circle.fill", label: "點數", value: 149),
-    Item(icon: "gamecontroller.fill", label: "積分", value: 285, iconColor: Color.yellow),
+    Item(icon: "gamecontroller.fill", label: "積分", value: 285, iconColor: Color("yellow")),
     Item(icon: "bag.fill", label: "商品券", value: 0),
-    Item(icon: "ticket.fill", label: "優惠券", value: 0, iconColor: Color.yellow)
+    Item(icon: "ticket.fill", label: "優惠券", value: 0, iconColor: Color("yellow"))
   ]
   
   var body: some View {

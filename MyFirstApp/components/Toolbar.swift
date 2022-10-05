@@ -35,7 +35,7 @@ struct MyCard: View {
   var body: some View {
     ZStack { // Card
       RoundedRectangle(cornerRadius: 2)
-        .fill(Color.red)
+        .fill(Color("red"))
         .frame(width: 14, height: 24)
         .rotationEffect(.degrees(60))
       
@@ -73,7 +73,7 @@ struct Notification: View {
           .font(Font.system(size: 16))
           .foregroundColor(.white)
           .frame(width: 18, height: 18)
-          .background(Color.yellow)
+          .background(Color("yellow"))
           .clipShape(Circle())
         
         Circle()

@@ -14,7 +14,7 @@ struct LittleHelper: View {
       .foregroundColor(.white)
       .background(
         Capsule()
-          .fill(Color.yellow)
+          .fill(Color("yellow"))
           .frame(width: 76, height: 36, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
       )
       .offset(x: -30, y: -80)

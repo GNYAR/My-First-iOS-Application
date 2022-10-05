@@ -27,7 +27,7 @@ struct TaskCardBackground: View {
   var body: some View {
     ZStack {
       RoundedRectangle(cornerRadius: 20)
-        .fill(Color.yellow)
+        .fill(Color("yellow"))
         .frame(height: 100)
       
       Circle()
@@ -47,12 +47,12 @@ struct CalendarImage: View {
         .foregroundColor(.white)
       
       Rectangle()
-        .fill(Color.red)
+        .fill(Color("red"))
         .frame(width: 44, height: 5)
         .offset(y: -12)
       
       RoundedRectangle(cornerRadius: 10)
-        .fill(Color.red)
+        .fill(Color("red"))
         .frame(width: 44, height: 10)
         .offset(y: -15)
       

@@ -43,7 +43,7 @@ struct ShortcutItem: View {
           .resizable()
           .scaledToFit()
           .frame(height: 20)
-          .foregroundColor(.yellow)
+          .foregroundColor(Color("yellow"))
           .font(Font.body.weight(.semibold))
       }
       

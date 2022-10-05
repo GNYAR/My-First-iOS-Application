@@ -11,7 +11,7 @@ struct Navigation: View {
   let navigationItems: [Item] = [
     Item(icon: "house", label: "首頁", iconColor: Color.gray),
     Item(icon: "percent", label: "專屬任務", iconColor: Color.gray),
-    Item(icon: "dollarsign.circle.fill", label: "付款/儲值", iconColor: Color.red),
+    Item(icon: "dollarsign.circle.fill", label: "付款/儲值", iconColor: Color("red")),
     Item(icon: "p.circle", label: "點數商城", iconColor: Color.gray),
     Item(icon: "person", label: "我的帳號", iconColor: Color.gray)
   ]
@@ -19,11 +19,11 @@ struct Navigation: View {
   var selected: UUID { navigationItems[0].id }
   
   func getIconColor(_ item: Item) -> Color {
-    selected == item.id ? Color.red : item.iconColor
+    selected == item.id ? Color("red") : item.iconColor
   }
   
   func getIconSize(_ item: Item) -> CGFloat {
-    item.iconColor == Color.red ? 48 : 24
+    item.iconColor == Color("red") ? 48 : 24
   }
   
   var body: some View {
@@ -40,7 +40,7 @@ struct Navigation: View {
           
           Text(x.label)
             .font(.footnote)
-            .foregroundColor(selected == x.id ? Color.red : Color.gray)
+            .foregroundColor(selected == x.id ? Color("red") : Color.gray)
         }
       }
     }
